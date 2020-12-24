@@ -1,16 +1,20 @@
 #include <iostream>
-#include "Player.cpp"
+#include "Player.h"
 
 class Human : public Player{
 	std::string human_move;
 public:
+	Human() {
 
+	}
+
+	~Human() {
+
+	}
 
 	Human(std::string move) {
 		this->human_move = move;
 	}
-
-
 
 	std::string move() { //method for human move
 		if (human_move == "rock" || human_move == "Rock") {

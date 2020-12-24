@@ -1,10 +1,18 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "Player.cpp"
+#include "Player.h"
 
 class Computer : public Player{
 public: 
+	Computer() {
+
+	}
+
+	~Computer() {
+
+	}
+
 	std::string move() {
 		std::string comp_choice;
 		std::srand(time(0));
